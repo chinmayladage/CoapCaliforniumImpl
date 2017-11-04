@@ -8,15 +8,7 @@
 	<artifactId>CoapCaliforniumImpl</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-
-<!-- 	<packaging>jar</packaging>
- -->
- 
 	<name>CoapCaliforniumImpl</name>
-
-	<properties>
-		<assembly.mainClass>org.eclipse.californium.examples.HelloWorldServer</assembly.mainClass>
-	</properties>
 
 	<dependencies>
 		<dependency>
@@ -24,8 +16,6 @@
 			<artifactId>californium-core</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-
-
 	</dependencies>
 
 	<build>
@@ -33,9 +23,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<!-- inherit configuration from parent POM -->
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
