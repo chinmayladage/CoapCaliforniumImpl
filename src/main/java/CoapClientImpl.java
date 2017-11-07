@@ -55,8 +55,10 @@ class CoapClientImpl {
 			} catch (IOException e1) {
 			}
 			if (discoverychoice.equals("y") || discoverychoice.equals("Y")) {
+				System.out.println("Resource discovery request @ " + uri + discovery);
 				client = new CoapClient(uri + discovery);
 			} else {
+				System.out.println("GET request @ " + uri );
 				client = new CoapClient(uri);
 			}
 
